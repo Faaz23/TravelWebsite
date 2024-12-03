@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Travel Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> 
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+ </head>
+
+
+    </head>
+    <body>
+        <main>
+            
+            <section id="Home">
+                <header>
+                    <span id="title"><img src="logo.png" alt="travellogo" id="logo" onclick="window.location.href='http://travelite-five.vercel.app'"><h1>Travelite</h1></span>
+                    <span id="nav">
+                        <a href="#Home">Home</a>
+                        <a href="#Places">Locations</a>
+                        <a href="#Destinations">Guides</a>
+                        <a href="iternaries.html">Iteneries</a>
+                        <button id="book" onclick="window.location.href='book.html'">Book Now</button>
+                        
+                    </span><button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </header>
+                <nav class="mobile_nav">
+                        <a href="#">Home</a>
+                        <a href="#">Locations</a>
+                        <a href="">Guides</a>
+                        <a href="#">Iteneries</a>
+                        
+                </nav>
+                    <div id="hero"><img src="hero.jpg" alt="heroimage" id="hero">
+                        <div id="left-text">Journey <br>
+                            That is memorable</div>
+                        <div id="box">
+                            <label for="From">From:<input type="text" placeholder="Leaving" id="from"></label><br><br>
+                            <label for="to">To:<input type="text" placeholder="going to" id="to"></label><br>
+                            <label for="adult" id="adult">Adult:<input type="number" placeholder="adult" id="adult" ></label>
+                            <label for="date" id="date">Date:<input type="date" placeholder="date" id="date"></label>
+                            <label for="submit"><input type="button" value="Check" id="submit"></input>
+                            <div id="results"></div>
+                        </div>
+                    </div>
+            </section>
+            <section id="Places">
+                <h1 id="name">Places</h1> 
+                <div id="hero1"><img src="hero2.jpg" alt="heroimage" id="hero1"><i class="fa fa-map-marker" aria-hidden="true" style="color: white;" id="icon"></i><a href="https://www.tajmahal.gov.in/ticketing.aspx"><div id="india"><img src="india.jpeg"></div></a>
+                <a><i class="fa fa-map-marker" aria-hidden="true" style="color: white;" id="icon1"></i><a href="https://www.pyramid-of-giza.com/?gad_source=1"><div id="Egypt"><img src="Egypt.jpg"> </div></a>
+                <a><i class="fa fa-map-marker" aria-hidden="true" style="color: white;" id="icon2"></i><a href="https://www.eiffeltickets.com/?gad_source=1"><div id="Eiffel"><img src="Eiffel.jpg"> </div></a>
+                <a><i class="fa fa-map-marker" aria-hidden="true" style="color: white;" id="icon3"></i><a href="https://www.viator.com/Sydney-tourism/d357-r6544561091-s110215091?m=28353&supag=121814028609&supca=12512866005&supsc=kwd-302072356718&supai=504927349145&supdv=c&supnt=g&suplp=1007809&supli=&supti=kwd-302072356718&tsem=true&supci=kwd-302072356718&supap1=&supap2=&supfi=&gad_source=1"><div id="opera"><img src="opera.png"> </div></a>
+                <a><i class="fa fa-map-marker" aria-hidden="true" style="color: white;" id="icon4"></i><a href="https://www.niagarafallstourism.com/tickets"><div id="niagra"><img src="niagra.jpeg"> </div></a>
+                <a><i class="fa fa-map-marker" aria-hidden="true" style="color: white;" id="icon5"></i><a href="https://www.viator.com/tours/Rio-de-Janeiro/8-hour-Full-Day-Complete-Tour-of-Rio-de-Janeiro-Shared-Group/d712-72313P43"><div id="rio"><img src="rio.jpg"> </div></a>
+               </div>
+            </div>
+            </section>
+            <section id="Destinations">
+                <h1 id="name1"><a href="#G">Destination Guides</a></h1>
+                <div id="imgbox">
+                    
+                    <div><img src="asia.png" id="img1" onclick="window.location.href='https://en.wikivoyage.org/wiki/Asia'"> </div>
+                    <div ><img src="Aus.png" id="img2" onclick="window.location.href='https://en.wikivoyage.org/wiki/Australia'"> </div>
+                    <div ><img src="Euro.png" id="img3" onclick="window.location.href='https://en.wikivoyage.org/wiki/Europe'"> </div>    
+                    <div><img src="newz.png" id="img4" onclick="window.location.href='https://en.wikivoyage.org/wiki/New_Zealand'"> </div>
+                    <div ><img src="Isla.png" id="img5" onclick="window.location.href='https://en.wikivoyage.org/wiki/Islands'"> </div>
+                    <div id="view"><h2 id="more" onclick="window.location.href='https://www.nationalgeographic.com/travel/destination/asia'"> >View more</h2></div>
+                </div>
+            </section>
+            <section class="reviews" id="Reviews">
+                <h2>Customer Reviews</h2>
+                <div class="carousel">
+                    <div class="review-item">
+                        <p>"Amazing experience so far"</p>
+                        <p>- andrew</p><br><br>
+                    </div>
+                    <div class="review-item">
+                        <p>"Awesome"</p>
+                        <p>- Smith</p>
+                    </div>
+                    <div class="review-item">
+                        <p>"Wow just crazy!!"</p>
+                        <p>- Johnson</p>
+                    </div>
+                    <div class="review-item">
+                        <p>"Easy to find and follow"</p>
+                        <p>- Mark</p>
+                    </div>
+                </div>
+            </section>
+        <script>
+    
+    
+        </script> 
+        <section class="hero4">
+            <h1 class="con">contact us</h1>
+            <input type="text" placeholder="Email" class="mail"/>
+        </section>
+            <section>
+                <footer>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="#"><i class="twitter"></i></a>
+                </footer>
+            </section>
+        </main>
+       
+    </body>
+</html>

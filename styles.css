@@ -1,0 +1,776 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Audiowide","sans serif";
+    overflow-x:hidden;
+    
+}
+header
+{
+    display: flex;
+    padding:2px;
+    align-items: center;
+}
+#logo
+{
+    width:10%;
+}
+#menu
+{
+    display: flex;
+    margin: 0;
+    width:3%;
+    display: none;
+}
+#title
+{
+    display: flex;
+    align-items: center;    
+}
+#nav
+{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+#book
+{
+
+    display: block;
+    border:0.5px transparent;
+    box-shadow:3px 3px 3px rgb(0,0,0,0.1);
+    padding: 5px;
+    cursor: pointer;
+    
+}
+#book:hover
+{
+    color:white;
+    
+}
+#hero
+{
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+    filter: brightness(97%);
+  
+   
+}
+#hero1
+{
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+
+    
+}
+
+
+a{
+    text-decoration:none;
+    height: 100%;
+    color:black;
+}
+a:hover
+{
+    background-color: rgb(234, 234, 234);
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1) ;
+
+}
+.hamburger
+{
+    position:relative;
+display:block;
+width:35px;
+cursor:pointer;
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+background:none;
+outline:none;
+border:none;
+margin-left: auto;
+right:10px;
+}
+
+.hamburger .bar,.hamburger:after,.hamburger:before
+{
+    content:'';
+    display:block;
+    width:100%;
+    height:5px;
+    background-color:black;
+    margin:6px 0px;
+    -webkit-transition:0.4s;
+    transition:0.4s
+}
+
+.hamburger.is-active:before
+{
+    -webkit-transform:rotate(-45deg) translate(-8px, 6px);
+    transform:rotate(-45deg) translate(-8px, 6px)
+}
+
+.hamburger.is-active:after
+{
+    -webkit-transform:rotate(45deg) translate(-9px, -8px);
+    transform:rotate(45deg) translate(-9px, -8px)
+}
+
+.hamburger.is-active .bar
+{
+    opacity:0;
+}
+.mobile-nav
+{
+    position:fixed;
+    top:0;
+    left:100%;
+    width:100%;
+    min-height:100vh;
+    display:block;
+    z-index:98;
+    background-color:#12002F;
+    padding-top:120px;
+    -webkit-transition:0.4s;
+    transition:0.4s}
+
+.mobile_nav
+{
+    display: block;
+    background-color: grey;
+    transition: 0.4s;
+    padding: 16px;
+    display: none;
+}
+
+.mobile_nav.is-active
+{
+    left:0;
+}
+.mobile_nav a 
+{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+  }
+  
+
+.mobile_nav:hover
+{
+    background-color: white;
+}
+footer
+{
+    display: flex;
+    margin:auto;
+    justify-content: space-evenly;
+    background-color: rgb(226, 226, 226);
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+}
+a:hover
+{
+    background-color:rgb(226, 226, 226);
+}
+.twitter::before
+{
+    content: "𝕏";
+    font-size: 20px;
+}
+#box
+{
+    background-color: white;
+    color: black;
+    width: 42%;
+    height: 39%;
+    justify-content: flex-start;
+    text-align: flex-start;
+    position: absolute;
+    right: 120px;
+    top: 300px;
+    display: block;
+    border-radius: 8px;
+    opacity: 0.7;
+
+}
+
+input 
+{
+    color: black;
+    opacity: unset;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    float: none;
+    width: 99%;
+    overflow-x: hidden;
+    height: 47px;
+
+}
+#adult
+{
+    width: 50%;
+    font-size: 1rem;
+   
+    display: inline-block;  
+    overflow-x: hidden;
+
+}
+#date
+{
+    width: 290px;
+    font-size: 1rem;
+    display: inline-block;
+    overflow-x: hidden;
+    flex-wrap: wrap-reverse;
+}
+#submit
+{
+    width: 100%;
+    font-size: 2rem;
+    display: inline-block;  
+    overflow-x: hidden;
+    top:10px;
+    margin-top: 10px;
+}
+#submit:hover
+{
+    color: black;
+    cursor: pointer;
+}
+#left-text
+{
+    top:350px;
+    display: flex;
+    position: absolute;
+    font-size: 3.4rem;
+    left:80px;
+    color:white;
+}
+#india
+{
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top:1330px;
+   width:7%;
+   height: 10%;
+   right:450px;
+   border-radius: 1px;
+   
+}
+#icon
+{
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top:1300px;
+   width:10%;
+   height: 10%;
+   right:360px;
+   font-size: 1.8rem;
+}
+#Egypt
+{
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top:1320px;
+    width:10%;
+    height: 10%;
+    right:550px;
+}
+#Eiffel
+{
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top:1230px;
+    width:10%;
+    height: 10%;
+    right:610px;
+ }
+ #niagra
+ {
+     margin: 0;
+     display: flex;
+     position: absolute;
+     top:1230px;
+     width:10%;
+     height: 10%;
+     right:970px;
+     
+  }
+  #rio
+  {
+     margin: 0;
+     display: flex;
+     position: absolute;
+     top:1470px;
+     width:10%;
+     height: 10%;
+     right:840px;
+     border-radius: 1px;
+     
+  }
+#icon1
+{
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top:1280px;
+   width:10%;
+   height: 10%;
+   right:520px;
+   font-size: 1.8rem;
+}
+#icon2
+{
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top:1190px;
+   width:10%;
+   height: 10%;
+   right:590px;
+   font-size: 1.8rem;
+}
+#icon3
+{
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top:1470px;
+   width:10%;
+   height: 10%;
+   right:100px;
+   font-size: 1.8rem;
+}
+#icon4
+{
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top:1200px;
+   width:10%;
+   height: 10%;
+   right:910px;
+   font-size: 1.8rem;
+}
+#icon5
+{
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top:1440px;
+   width:10%;
+   height: 10%;
+   right:780px;
+   font-size: 1.8rem;
+}
+#opera
+{
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top:1500px;
+   width:10%;
+   height: 10%;
+   right:160px;
+   border-radius: 1px;
+   
+}
+#name
+{
+    color:white;
+    position: absolute;
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    left:44%;
+    text-shadow:0px 2px 5px  white;
+}
+#india,#Egypt,#Eiffel,#opera,#niagra,#rio
+{
+    cursor: pointer;
+    
+}
+#india:hover:hover,#Eiffel:hover,#opera:hover,#niagra:hover,#rio:hover
+{
+    border:2px solid white;
+    
+}
+#imgbox
+{
+    width:80%;
+    height: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    
+}
+#img1,#img2,#img3,#img4,#img5
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:70%;
+    cursor: pointer;
+    gap:1px;
+    line-height: 1px;
+}
+#view
+{
+    border:1px solid grey;
+    width:28%;
+    height:470px;
+    text-align:center;
+    justify-content: center;
+    color:white;
+    display: flex;
+    background-color:grey;
+
+}
+#more
+{
+    text-align:center;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    cursor: pointer;
+}
+#view:hover
+{
+    filter: brightness(80%);
+}
+#name1 
+{
+    writing-mode: horizontal-tb;
+    text-align: center;
+}
+.reviews {
+    background-color: #ECECEC;
+    padding: 50px 20px;
+    text-align: center;
+    font-weight: lighter;
+    color:  black;
+}
+
+.reviews h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: grey;
+}
+
+.carousel {
+    max-width: 1000px;
+    max-height:200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.review-item {
+    background: #ECECEC;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #ECECEC;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing:border-box;
+    
+}
+
+
+.review-item p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.hero4
+{
+    background-size:auto; 
+    background-color:#2D2D2D;
+    background-position: center center; 
+    height: 50vh; 
+    width:101.4%;
+    display:flex;
+    margin-top:-10px;
+    margin-left: -10px;
+    background-attachment: fixed;
+}
+.con 
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+}
+.mail
+ {
+    height: 10%;
+    margin-top: 200px;
+    margin-left: 50px;
+    width: 400px;
+    background-color: transparent;
+    border: 2px solid white; 
+    color: white;
+    padding: 10px; 
+    font-size: 1em;
+    outline: none;
+}
+@media screen and (max-width:1400px)
+{
+    #box
+    {
+        background-color: white;
+        color: black;
+        width: 42%;
+        height: 50%;
+        justify-content: flex-start;
+        text-align: flex-start;
+        position: absolute;
+        right: 120px;
+        top: 300px;
+        display: block;
+        border-radius: 8px;
+        opacity: 0.7;
+    }
+    #Egypt,#Eiffel,#opera,#niagra,#rio
+{
+    display: none;
+    
+}
+}
+
+@media screen and (max-width:598px)
+{
+    .con 
+{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position:absolute;
+    right:90px;
+    display:flex;
+    width: 50%;
+}
+.mail
+ {
+    height: 10;
+    margin-bottom: auto;
+    background-color: transparent;
+    border: 2px solid white; 
+    color: white;
+    padding: 10px; 
+    font-size: 1em;
+    margin-right:auto;
+    margin-left: auto;
+    outline: none;
+    width:100%;
+}
+    .mobile_nav
+{
+    display: block;
+    background-color: grey;
+    transition: 0.4s;
+    padding: 16px;
+    
+}
+#hero1,#name
+{
+    display: none;
+}
+
+    #imgbox
+    {
+        width:100%;
+        height: 5%;
+        display: flex;
+        margin: auto auto auto auto;
+        offset-distance: 1px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        
+    }
+    #view
+{
+    border:1px solid grey;
+    width:100%;
+    height:470px;
+    text-align:center;
+    justify-content: center;
+    color:white;
+    display: flex;
+    background-color:grey;
+
+}
+#more
+{
+    text-align:center;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    cursor: pointer;
+}
+#view:hover
+{
+    filter: brightness(80%);
+}
+#hero
+{
+  
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: -webkit-fill-available;
+        
+}   
+#nav
+{
+    flex-direction: column;
+flex-wrap: wrap;
+display: flex;
+align-items: center;
+margin-top: 20px;
+background-color: lightgrey;
+transition: all 0.2s ease-in-out;
+width: 97%;
+
+}
+#nav 
+{
+    display: flex;
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    #nav 
+    {
+      display: none;
+    }
+    .hamburger:checked~.mobile_nav
+    {
+        max-height:100%;
+    }
+  
+
+header
+{
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+}
+#title
+{
+    top:0;
+    margin-bottom: auto;
+    justify-content: center;
+    
+}
+.bar
+{
+    order:-1;
+    margin-bottom: auto;
+   
+}
+#box
+{
+    background-color: white;
+color: black;
+width: 80%;
+height: -webkit-fit-content;
+justify-content: center;
+text-align: flex-start;
+position: absolute;
+right: 40px;
+top: 381px;
+display: block;
+border-radius: 8px;
+opacity: 0.8;
+}
+
+#box:hover
+{
+    opacity: 1;
+}
+input
+{
+    color: black;
+    opacity: unset;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    float: none;
+    width: 99%;
+    overflow-x: hidden;
+    height: 47px;
+    width: -webkit-fill-available;
+    overflow-x: hidden;
+}
+#date
+{
+    width: -webkit-fill-available;
+    font-size: 1rem;
+    display: inline-block;
+    overflow-x: hidden;
+    flex-wrap: wrap-reverse;
+    overflow-x: hidden;
+}
+#left-text
+{
+  display: none;
+}
+#Egypt,#Eiffel,#opera,#niagra,#rio
+{
+    display: none;
+    
+}
+
+  
+@media screen and (max-width:1111px)
+{
+
+#Egypt,#Eiffel,#opera,#niagra,#rio
+{
+    display: none;
+    
+}
+}
+
+  }}
+
+  @media screen and (max-width:543px)
+  {
+  
+  #img1,#img2,#img3,#img4,#img5
+  {
+      width:100%;
+      display: flex;
+      justify-content: center;
+      
+  }
+  }
+
+
+
+
+
+ 
+  
+ 
