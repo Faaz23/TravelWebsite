@@ -460,43 +460,15 @@ input
     writing-mode: horizontal-tb;
     text-align: center;
 }
-.reviews {
-    background-color: #ECECEC;
-    padding: 50px 20px;
-    text-align: center;
-    font-weight: lighter;
-    color:  black;
+.review
+{
+    margin-left: 9px;
+    text-decoration: none;
+    color:rgb(169, 169, 169);
 }
-
-.reviews h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    overflow: hidden;
-    color: grey;
-}
-
-.carousel {
-    max-width: 1000px;
-    max-height:200px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.review-item {
-    background: #ECECEC;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px #ECECEC;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing:border-box;
-    
-}
-
-
-.review-item p {
-    font-size: 1.5em;
-    margin: 10px 0;
+.review:hover
+{
+    color:rgb(215, 215, 215);
 }
 .hero4
 {
